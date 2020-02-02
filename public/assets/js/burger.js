@@ -29,7 +29,7 @@ $(function() {
         name: $("#ca").val().trim(),
         devoured: $("[name=sleepy]:checked").val().trim()
       };
-  
+      console.log(newBurger)
       // Send the POST request.
       $.ajax("/api/burgers", {
         type: "POST",
